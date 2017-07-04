@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Zhouliang Yu (于宙亮)'s Personal Website </title>
+    <link rel="stylesheet" href="css/mainStyle.css" />
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html" style="text-decoration:none;"> Home </a></li>
+        <li><a href="myNews.html" style="text-decoration:none;"> News </a></li>
+        <li><a href="myResource.html" style="text-decoration:none;"> Resource </a></li>
+        <li><a href="myResearch.html" style="text-decoration:none;"> Research </a></li>
+        <li><a href="introElegans.html" style="text-decoration:none;"> <em>C.
+                    elegans</em> </a></li>
+        <li><a href="myCV.html" style="text-decoration:none;"> CV </a></li>
+        <li><a href="myPubs.html" style="text-decoration:none;"> Publication </a></li>
+        <li><a href="myContact.html" style="text-decoration:none;"> Contact </a></li>
+
+    </ul>
+    <br />
+
+    <!-- Contents -->
+    <h2> ~ nucleiSeg ~ </h2>
+    <h3> A Python script for nucleus segmentation from a worm gonad image </h3>
+
+    <p> <b>"nucleiSeg"</b> is a Python script I worte for a simple task - nucleus segmentation
+    based on a 2-D DAPI-stained worm gonad image. This script automates annoying image analysis
+    work if you are looking at something in a "nucleus-wise" way. </p>
+
+    <p> The way by which this little tool works is illusrated as below. During each iteration,
+    nuclei are picked out through these steps: <b>1)</b> Starting image <b>2)</b> local thresholding <b>3)</b> Denoising
+    <b>4)</b> Closing gaps <b>5)</b> Filling nuclei <b>6)</b> Picking out objects <b>7)</b> selecting well-segmented nuclei
+    <b>8)</b> Masking picked nuclei before next iteration. The Iteration stops if no more "good" nuclei can be picked out.
+    Then you'll get the <b>9)</b> Final segmentation result. </p>
+
+    <p><img src="images/script_workflow_jpg.jpg" alt="Workflow for nucleus segmentation"
+    title="Illustration of how the script works"
+    style="display:block;
+           margin-left:auto;
+           margin-right:auto;
+           width:99%;
+           height:99%;" /></p>
+
+    <p> The script takes a image file as the input and returns a CSV file as the output, in which you'll
+    have the inforamtion about the centroid and the radius of an "equivalent circular nucleus"
+    of each individual nucleus. With most nuclei segmented out, further analysis can be built on top of
+    this - for instance, foci-counting useing blob-detection algorithms, or texture detection tasks.</p>
+
+    <p> This little tool makes use of the Python image analysis toolkit <a href="http://scikit-image.org"
+           title="scikit-image website">scikit-image</a>, the source code has been
+    uploaded and can be found in <a href="https://github.com/zhouliangyu/SeAM"
+                                    title="GitHub Repo">my GitHub Repo</a>.</p>
+
+    <!-- Contents -->
+
+    <p></p>
+    <p></p>
+    <hr />
+    <p class="myFooter"><strong> Built and maintained by Zhouliang Yu, 2017
+        </strong></p>
+
+
+</body>
+</html>
