@@ -25,14 +25,14 @@
     <h2> ~ nucleiSeg ~ </h2>
     <h3> A Python script for nucleus segmentation from a worm gonad image </h3>
 
-    <p> <strong>"nucleiSeg"</strong> is a Python script I worte for a simple task - nucleus segmentation
+    <p> <strong>"nucleiSeg"</strong> is a Python script I wrote for a simple task - nucleus segmentation
     based on a 2-D DAPI-stained worm gonad image. This script automates annoying image analysis
     work if you are looking at something in a "nucleus-wise" way. </p>
 
     <p> The way by which this little tool works is illustrated as below. During each iteration,
     nuclei are picked out through these steps: <strong>1)</strong> Starting image <strong>2)</strong>
     Local thresholding <strong>3)</strong> Denoising <strong>4)</strong> Closing gaps <strong>5)</strong>
-    Filling nuclei <strong>6)</strong> Picking out objects <strong>7)</strong> selecting well-segmented nuclei
+    Filling nuclei <strong>6)</strong> Picking out objects <strong>7)</strong> Selecting well-segmented nuclei
     <strong>8)</strong> Masking picked nuclei before next iteration. The iteration stops if no more "good"
     nuclei can be picked out. Then you'll get the <strong>9)</strong> Final segmentation result. </p>
 
