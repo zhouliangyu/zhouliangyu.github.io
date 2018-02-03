@@ -1,0 +1,102 @@
+
+h2 {
+    color: #BAAE78;
+    font-family: Arial;
+    font-size: 150%;
+    text-align: center;
+}
+
+h3 {
+    color: #BAAE78;
+    font-family: Arial;
+    font-size: 120%;
+    text-align: center;
+}
+
+h4 {
+    color: #BAAE78;
+    font-family: Arial;
+    font-size: 120%;
+    text-align: left;
+}
+
+
+body {
+    background-color: #0A0101;
+    color: #B58644;
+    font-family: Verdana;
+    font-size: 110%;
+}
+
+p {
+    margin: 20px;
+    padding: 20px 20px 20px 50px;
+ }
+
+
+p.myFooter {
+    font-family: Arial;
+    font-size: 80%;
+    margin: 0px;
+    padding: 0px;
+    color: #0A0101;
+    background-color: #80778C;
+
+}
+
+a:link {
+    color: #BAAE78;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #BAAE78;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #B0778C;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:link {
+    color: #BAAE78;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+th, td {
+    padding: 2px 10px 5px 2px;
+}
+
+th {
+    border-bottom-color: #B0778C;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #80778C;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: #0A0101;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #0A0101;
+}
